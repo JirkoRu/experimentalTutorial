@@ -4,7 +4,7 @@
 
 Maybe you have gotten a comment like this before. This practical will hopefully some basic insight into what might be involved in human data collection and maybe next time you can refer reviewer 2 to your cool behavioural results that qualitatively match your model predictions.
 
-In this practical we will build a bandit task that can nicely run in your browser. I hope this tutorial will give some insight into what might be involved in human data collection. Who knows, maybe you might even want contact me in the future to run your own quick human experiment on prolific. 
+In this practical we will build a bandit task that can run in your browser. I hope this tutorial will give some insight into what might be involved in human data collection. Who knows, maybe you might even want contact me in the future to run your own quick human experiment on prolific. 
 
 Many credits to [Alex Grogan](https://github.com/agrogan97) who is responsible for psychex and some components of this tutorial. 
 
