@@ -81,7 +81,6 @@ class BanditTask extends NArmBandit {
         for (let i=0; i<this.nArms; i++){
             this.slotMachines.push(
                 // Create a new image object and store it in the slot machines object
-                // new pImage(25 + i*50, 50, assets.imgs.slotMachine)
                 new Button(25 + i*40, 50, "Pull", `arm${i+1}`, btnStylesArm)
             );
             this.slotMachines[i].id = `arm${i+1}`;
@@ -96,21 +95,7 @@ class BanditTask extends NArmBandit {
                 // Pull the arm and get the result
                 let result = this.pullArm(ix)
                 this.pullResults[e.id].push(result);
-
-                if (e.id == "arm1"){
-                    result ? this.textA.setText("Score +1") : this.textA.setText("No Score")
-                } else if (e.id == "arm2"){
-                    result ? this.textB.setText("Score +1") : this.textB.setText("No Score")
-                }
-
-                // if (result) {
-                //     this.score += 1;
-                // }
-                // this.resultText.setText(`Score: ${this.score}`)
-
-                setTimeout(() => {
-                    e.id == "arm1" ? this.textA.setText("") : this.textB.setText("");
-                }, 1500)
+                
             }
         })
 
