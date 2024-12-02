@@ -1,6 +1,6 @@
 // -- PARAMS --
 var assets = {"imgs" : {}, "fonts" : {}}
-// var params = {verbose: false, positionMode: "PERCENTAGE", textAlign: "CENTER", imageMode: "CENTER", rectMode: "CENTER"};
+var params = {verbose: false, positionMode: "PERCENTAGE", textAlign: "CENTER", imageMode: "CENTER", rectMode: "CENTER"};
 // ------------
 var gameContent = {};
 var myGame;
@@ -59,6 +59,17 @@ function draw(){
     gameContent.myBanditTask.draw();
 }
 
+const btnStylesArm = {
+    "background-color" : '#851ced',
+    "border" : "#b4b4b4",
+    "color" : "white",
+    "padding" : "15px",
+    "font-size" : "20px",
+    "width" : "175px",
+    "box-shadow": "0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)",
+    "cursor" : "pointer"
+}
+
 class BanditTask extends NArmBandit {
     constructor(x, y, nArms, probs){
         super(x, y, nArms, probs);
@@ -70,10 +81,11 @@ class BanditTask extends NArmBandit {
         for (let i=0; i<this.nArms; i++){
             this.slotMachines.push(
                 // Create a new image object and store it in the slot machines object
-                new pImage(25 + i*50, 50, assets.imgs.slotMachine)
+                // new pImage(25 + i*40, 50, assets.imgs.slotMachine)
+                new Button(25 + i*40, 50, "Pull", `arm${i+1}`, btnStylesArm)
             );
             this.slotMachines[i].id = `arm${i+1}`;
-        }
+        }   
 
         // Create an object to store arm pull results
         this.pullResults = {"arm1" : [], "arm2" : []}
