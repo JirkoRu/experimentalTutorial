@@ -103,7 +103,7 @@ Let's fill in the blanks!
 
 6. *Add a timer that counts down to decision* 
 
-    In a more real task we might want people to have limited time to sample with a subsequent decision about which arm is more valuable. [Here](https://agrogan97.github.io/psychex/code_docs/primitives.html#Countdown) is a link to a countdown object that would allow you to implement something like this. Countdown is in line 1212 of `lib/psychex/psychex.maint.js`of this repo if you want to look at the code.
+    In a more real task we might want people to have limited time to sample with a subsequent decision about which arm is more valuable. [Here](https://agrogan97.github.io/psychex/code_docs/primitives.html#Countdown) is a link to a countdown object that would allow you to implement something like this. The definition of the Countdown class is in line 1212 of `lib/psychex/psychex.maint.js`of this repo if you want to look at the code.
 
 
 7. *Datasaving*
