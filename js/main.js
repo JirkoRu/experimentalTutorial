@@ -44,7 +44,7 @@ function setup(){
     })
     
     gameContent.endGame.onClick(() => {
-        window.location.href = `https://agrogan97.github.io/psychex/`
+        window.location.href = `https://www.youtube.com/watch?v=dQw4w9WgXcQ`
     })
 }
 
@@ -60,7 +60,7 @@ function draw(){
 }
 
 const btnStylesArm = {
-    "background-color" : '#851ced',
+    "background-color" : '#424e54',
     "border" : "#b4b4b4",
     "color" : "white",
     "padding" : "15px",
@@ -81,7 +81,7 @@ class BanditTask extends NArmBandit {
         for (let i=0; i<this.nArms; i++){
             this.slotMachines.push(
                 // Create a new image object and store it in the slot machines object
-                // new pImage(25 + i*40, 50, assets.imgs.slotMachine)
+                // new pImage(25 + i*50, 50, assets.imgs.slotMachine)
                 new Button(25 + i*40, 50, "Pull", `arm${i+1}`, btnStylesArm)
             );
             this.slotMachines[i].id = `arm${i+1}`;
@@ -95,7 +95,6 @@ class BanditTask extends NArmBandit {
             sm.onClick = (e) => {
                 // Pull the arm and get the result
                 let result = this.pullArm(ix)
-                console.log(`${e.id} pulled ${result}`)
                 this.pullResults[e.id].push(result);
 
                 if (e.id == "arm1"){
@@ -104,10 +103,10 @@ class BanditTask extends NArmBandit {
                     result ? this.textB.setText("Score +1") : this.textB.setText("No Score")
                 }
 
-                if (result) {
-                    this.score += 1;
-                }
-                this.resultText.setText(`Score: ${this.score}`)
+                // if (result) {
+                //     this.score += 1;
+                // }
+                // this.resultText.setText(`Score: ${this.score}`)
 
                 setTimeout(() => {
                     e.id == "arm1" ? this.textA.setText("") : this.textB.setText("");
