@@ -21,7 +21,7 @@ Then you should be able to navigate to http://127.0.0.1:8000 in your browser to 
 Currently, it is not much of a task, but we will progressively add elements to make it into a somewhat proper two armed bandit task. 
 
 ### 2. The basics of Psychex 
-For this tutorial we will use psychex, which was developed in Chris Summerfield's lab (my co-advisor), but there are many alternatives out there that all have their pros and cons.
+For this tutorial we will use psychex, but there are many alternatives out there that all have their pros and cons.
 
 Now you can open the project in your favourite code editor. and open `js/main.js`. This file holds the code for the tutorial. Normally we might want to separate things into different modules but for simplicity it is all there. 
 
