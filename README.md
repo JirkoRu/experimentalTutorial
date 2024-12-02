@@ -17,11 +17,11 @@ Now you can open the project in your favourite code editor. and open `js/main.js
 
 You will see three important functions. Ignore their content for now. I will explain what they are doing 
 
-- preload() loads static content in advance.
+- `preload()` loads static content in advance.
 
-- setup() contains code to be run once at the start of the experiment
+- `setup()` contains code to be run once at the start of the experiment
 
-- draw() contains renderable content that can be run many times per second according to your refresh rate.
+- `draw()` contains renderable content that can be run many times per second according to your refresh rate.
 
 ### 3. Working on a bandit task
 Now fill the blanks.
